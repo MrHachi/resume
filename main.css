@@ -62,3 +62,8 @@ strong {
         @apply px-0 py-0;
     }
 }
+
+.segment {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
