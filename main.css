@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: Inter, sans-serif;
+}
+
+@page {
+    size: A4;
+    margin: 8mm 0mm;
+}
+
+body {
+    @apply mx-auto max-w-3xl px-8 py-10 text-gray-900;
+    font-family: var(--font-sans);
+    font-size: 10.5pt;
+}
+
+h1 {
+    @apply mb-1 text-4xl font-bold tracking-tight;
+}
+
+h2 {
+    @apply mt-7 mb-3 border-b border-gray-200 pb-1 text-lg font-semibold uppercase tracking-wide;
+}
+
+h3 {
+    @apply mt-4 mb-1 text-base font-semibold;
+}
+
+p {
+    @apply my-2 leading-relaxed;
+}
+
+ul {
+    @apply my-2 list-disc pl-5;
+}
+
+li {
+    @apply mb-1;
+}
+
+a {
+    @apply text-gray-700 no-underline;
+}
+
+strong {
+    @apply font-semibold;
+}
+
+@media print {
+    body {
+        @apply px-0 py-0;
+    }
+}
