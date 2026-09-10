@@ -1,0 +1,117 @@
+name: First Last
+
+headline: Sample Engineer
+
+location:
+  current: Sample, Japan
+  desired: Example, USA
+
+contact:
+  email: first.last.123@gmail.com
+  phone: "+81 090-0000-0000"
+  linkedin: www.linkedin.com/in/first-last-xyz
+  github: github.com/MrHachi
+
+summary: >
+  Sample infrastructure engineer with 5+ hours of existence
+  sitting somewhere on GitHub's infrastructure, doing particularly nothing,
+  and serving as a sample for anyone who wants to use this? Experienced across...
+  nothing. Professional experience in AWS and hands-on Kubernetes also non-existent.
+  Strongest at being fed into a sprig-based template renderer and becoming, for all
+  practical purposes, a useless PDF.
+
+skills:
+  - name: Cloud
+    items:
+      - Foo
+      - Bar
+
+  - name: Containers & Platform
+    items:
+      - Kubernetes
+
+  - name: Observability
+    items:
+      - SampleWatch
+      - ExampleRay
+
+  - name: Languages
+    items:
+      - YAML
+      - Markdown
+      - oh wait those aren't really programming languages are they
+
+  - name: Foo
+    items:
+      - Baz
+
+experience:
+  - company: Not a real company
+    location: Sample, Japan
+    title: Fake Engineer
+    start: Jan. 9999
+    end: Present
+
+    clients: []
+
+    bullets:
+      - "Did something."
+
+      - "Talked to someone."
+
+      - "Typed into a computer."
+
+      - "Joined meetings."
+
+  - company: Not a real consultancy firm
+    location: Nowhere, USA
+    title: Cloud Imaginary Engineer
+    start: Aug. 9996
+    end: Dec. 9998
+
+    clients:
+      - name: Not a real company
+        start: Apr. 9998
+        end: Dec. 9998
+
+        bullets:
+          - "Did nothing in particular."
+
+          - "Occupied a seat."
+
+      - name: Still not a real company
+        start: Aug. 9996
+        end: Mar. 9998
+
+        bullets:
+          - "Performed presence."
+
+projects:
+  - name: A fake portfolio project
+    technologies:
+      - YAML
+      - Baz
+
+    bullets:
+      - "Took up space on GitHub."
+
+      - "Took up compute hours on GitHub Actions."
+
+    github: resume
+
+education:
+  - institution: University of... Actually nah
+    location: The Abyss, USA
+    degree: Bachelor of Being YAML
+    details: UTF8
+    date: June 9995
+
+certifications:
+  - Certified Solutions Architect - Generic
+
+languages:
+  - name: English
+    proficiency: Static
+
+  - name: YAML
+    proficiency: Consummate understanding
