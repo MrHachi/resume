@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "MrHachi",
   "scripts": {
-    "render:main": "func(){ ./render.sh $1 main.md main.css; }; func"
+    "render:main": "func(){ ./render.sh \"$1\" main.md main.css; }; func"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
