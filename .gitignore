@@ -1,0 +1,6 @@
+node_modules/**
+rendered/**
+.build/**
+.DS_Store
+
+tpl/input/**/*.yml
