@@ -2,7 +2,7 @@
 
 **{{ .headline }}**
 
-{{ .location.current }}{{ if .location.desired }} · Looking to relocate to {{ .location.desired }}{{ end }}
+{{ .location.current }} · {{ if .location.desired }}Looking to relocate to {{ .location.desired }}{{ else }}Able to relocate{{ end }}
 
 [{{ .contact.email }}](mailto:{{ .contact.email }}) · [{{ .contact.phone }}](tel:{{ .contact.phone | replace "-" "" | replace " " "" }})
 
