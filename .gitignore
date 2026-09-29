@@ -3,5 +3,5 @@ rendered/**
 .build/**
 .DS_Store
 
-tpl/input/**/*.yml
+tpl/input/**/*
 !tpl/input/sample.yml

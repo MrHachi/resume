@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "author": "MrHachi",
   "scripts": {
-    "render:main": "func(){ npm run render \"$1\" main.md main.css; }; func",
+    "render:modern": "func(){ npm run render \"$1\" main.md main.modern.css; }; func",
+    "render:refined": "func(){ npm run render \"$1\" main.md main.refined.css; }; func",
     "render:sample": "func(){ npm run render tpl/input/sample.yml main.md main.css; }; func",
     "render": "func(){ ./render.sh \"$1\" \"$2\" \"$3\"; }; func"
   },

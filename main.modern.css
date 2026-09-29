@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+}
+
+@page {
+    size: A4;
+    margin: 10mm 12mm;
+}
+
+body {
+    @apply mx-auto max-w-3xl text-zinc-900;
+    font-family: var(--font-sans);
+    font-size: 9.5pt;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    @apply mb-0.5 text-2xl font-bold tracking-wide text-violet-950;
+}
+
+h2 {
+    @apply mt-5 mb-2 pb-1 text-xs font-bold uppercase tracking-wider text-violet-950 border-b border-zinc-200;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+h3,
+.experience > h3,
+.portfolio > h3 {
+    @apply mt-3 mb-0.5 text-sm font-bold text-violet-950;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+p {
+    @apply my-1 text-zinc-800;
+    line-height: 1.4;
+}
+
+ul {
+    @apply my-1 pl-4 list-disc text-zinc-800;
+}
+
+li {
+    @apply mb-1;
+    line-height: 1.35;
+}
+
+a {
+    @apply text-zinc-700 no-underline font-medium;
+}
+
+strong {
+    @apply font-semibold text-zinc-950;
+}
+
+.skills strong,
+.skill-category {
+    @apply text-[10px] font-bold uppercase tracking-wider text-violet-950;
+}
+
+@media print {
+    body {
+        @apply max-w-none w-full px-0 py-0;
+    }
+}
+
+.segment {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}

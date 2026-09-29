@@ -2,7 +2,7 @@
 
 **{{ .headline }}**
 
-{{ .location.current }} · {{ if .location.desired }}Looking to relocate to {{ .location.desired }}{{ else }}Able to relocate{{ end }}
+Relocating from {{ .location.current }}, {{ if .location.desired }}looking to move to {{ .location.desired }}{{ else }}US Citizen, no Visa/relocation support required{{ end }}
 
 [{{ .contact.email }}](mailto:{{ .contact.email }}) · [{{ .contact.phone }}](tel:{{ .contact.phone | replace "-" "" | replace " " "" }})
 
@@ -16,7 +16,7 @@
 
 </section>
 
-<section class="segment">
+<section class="segment skills">
 
 ## TECHNICAL SKILLS
 
@@ -28,29 +28,15 @@
 
 {{ range .experience }}
 
-<section class="segment">
+<section class="segment experience">
 
 ### {{ .company | upper }}, {{ .location }}
 
 **{{ .title }}** | {{ .start }} – {{ .end }}
 
-{{ if .clients }}
-{{ range .clients }}
-{{ if .name }}
-**Client: {{ .name }}**{{ if or .start .end }} | {{ .start }} – {{ .end }}{{ end }}
-
 {{ range .bullets }}
 
 - {{ . }}
-  {{ end }}
-
-{{ end }}
-{{ end }}
-{{ else }}
-{{ range .bullets }}
-
-- {{ . }}
-  {{ end }}
   {{ end }}
 
 </section>
@@ -61,7 +47,7 @@
 
 {{ range .projects }}
 
-<section class="segment">
+<section class="segment portfolio">
 
 ### {{ .name }}
 
